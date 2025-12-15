@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seesaw Physics Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sky"></div>
+    
+    <div class="scene">
+        <h1 class="title">Seesaw Physics</h1>
+        
+        <!-- Weight Selector Panel -->
+        <div class="weight-panel">
+            <h3>Select Weight</h3>
+            <div class="weight-options">
+                <button class="weight-btn active" data-weight="1">1 kg</button>
+                <button class="weight-btn" data-weight="2">2 kg</button>
+                <button class="weight-btn" data-weight="5">5 kg</button>
+                <button class="weight-btn" data-weight="10">10 kg</button>
+            </div>
+            <p class="hint">Click on board to place weight<br>Click weight to remove</p>
+        </div>
+
+        <!-- Torque Display -->
+        <div class="torque-display">
+            <div class="torque-side left">
+                <span class="label">Left Torque</span>
+                <span class="value" id="left-torque">0</span>
+            </div>
+            <div class="torque-side right">
+                <span class="label">Right Torque</span>
+                <span class="value" id="right-torque">0</span>
+            </div>
+        </div>
+
+        <!-- Seesaw Container -->
+        <div class="seesaw-container">
+            <!-- The rotating board -->
+            <div class="seesaw-board" id="seesaw-board">
+                <div class="board-surface"></div>
+                <!-- Weights will be dynamically added here -->
+            </div>
+            
+            <!-- Fulcrum (pivot point) -->
+            <div class="fulcrum">
+                <div class="fulcrum-top"></div>
+                <div class="fulcrum-base"></div>
+            </div>
+        </div>
+
+        <!-- Ground -->
+        <div class="ground">
+            <div class="grass"></div>
+            <div class="dirt"></div>
+        </div>
+
+        <!-- Reset Button -->
+        <button class="reset-btn" id="reset-btn">Reset All</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
