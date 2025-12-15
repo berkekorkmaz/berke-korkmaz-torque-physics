@@ -1,3 +1,6 @@
+## Important Note
+Scale of the project is not appropriate for multiple commits. That was a free time activity. Sorry for non-traceability and limited time. 
+
 # Seesaw Physics Simulator
 
 A web application that demonstrates how a seesaw works. Users can place weights on a virtual seesaw and observe how it tilts based on the weight and position of objects.
